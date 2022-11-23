@@ -14,6 +14,11 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
+
+  let newArray = amigos.filter(obj => Object.keys(obj).some(key =>  obj[key] == nombre))
+  return(newArray[0]);
+  
+
   
 }
 
